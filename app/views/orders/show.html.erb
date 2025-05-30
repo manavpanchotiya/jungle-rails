@@ -1,10 +1,24 @@
 <section class="orders-show">
 
   <header class="page-header">
-    <h1>Order #<%= @order.id %></h1>
+    <h1>Order #<%= @order.id %> </h1>
+    <h3>Order confirmation send to: <%= @order.email %> </h3>
+
+    <% @order.line_items.each do |line_item| %>
+    <% product = line_item.product %>
+    
+    <p><%= image_tag(product.image.url, size: "100x100") %></p>
+    <h3><%= product.name %></h3>
+    <h4>Description: <%= product.description %></h4>
+    <h4>Order quantity: <%= line_item.quantity %></h4>
+    <h4>Item total: $<%= line_item.item_price %></h4>
+    <h4>Order total: $<%= line_item.item_price * line_item.quantity %></h4>
+   
+    <% end %>
   </header>
 
   <div class="order-summary jumbotron">
+
     <h4>Thank you for your order!</h4>
   </div>
 

@@ -3,7 +3,7 @@
 <% if enhanced_cart.empty? %>
     <header class="page-header">
       <h2> Uh oh...your cart is empty! </h2>
-      <h4> How about you <%= link_to 'browse our products', root_path %>? </h4>
+      <h4> <%= link_to ' How about you browse our products?', root_path, class: 'btn btn-lg btn-primary' %> </h4>
     </header>
     
     <% else %>
@@ -50,7 +50,7 @@
           data-name="Jungle"
           data-description="Khurram Virani's Jungle Order"
           data-locale="auto"
-          data-email="temp@gmail.com"
+          data-email="test@test.com"
           data-currency="cad">
         </script>
       <% end %>
