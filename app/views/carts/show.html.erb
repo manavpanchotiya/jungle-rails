@@ -1,8 +1,15 @@
 <section class="cart-show">
 
-  <header class="page-header">
-    <h1>My Cart</h1>
-  </header>
+<% if enhanced_cart.empty? %>
+    <header class="page-header">
+      <h2> Uh oh...your cart is empty! </h2>
+      <h4> How about you <%= link_to 'browse our products', root_path %>? </h4>
+    </header>
+    
+    <% else %>
+    <header class="page-header">
+      <h1>My Cart</h1>
+    </header>
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -18,6 +25,7 @@
         <% enhanced_cart.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
+        
       </tbody>
       <tfoot>
         <tr>
@@ -48,5 +56,6 @@
       <% end %>
     </div>
   </div>
+  <% end %>
 
 </section>
