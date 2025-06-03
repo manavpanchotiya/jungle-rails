@@ -63,7 +63,47 @@ RSpec.describe User, type: :model do
       @user2.valid?
       expect(@user2.errors.full_messages).to include("Email has already been taken")
     end
- 
+    
+    it "is not valid with empty first name fields" do
+      @user = User.new(
+        f_name: nil,
+        l_name: 'Doe',
+        email: 'John@doe.com',
+        password: 'easypasssword123',
+        password_confirmation: 'easypasssword123'
+      )
+
+      @user.valid?
+      expect(@user.errors.full_messages).to include("F name can't be blank")
+    end
+
+    it "is not valid with empty last name fields" do
+      @user = User.new(
+        f_name: 'John',
+        l_name: nil,
+        email: 'John@doe.com',
+        password: 'easypasssword123',
+        password_confirmation: 'easypasssword123'
+      )
+
+      @user.valid?
+      expect(@user.errors.full_messages).to include("L name can't be blank")
+    end
+
+    it "is not valid with empty email fields" do
+      @user = User.new(
+        f_name: 'John',
+        l_name: 'Doe',
+        email: nil,
+        password: 'easypasssword123',
+        password_confirmation: 'easypasssword123'
+      )
+
+      @user.valid?
+      expect(@user.errors.full_messages).to include("Email can't be blank")
+    end
+
+    
   
   end
   
