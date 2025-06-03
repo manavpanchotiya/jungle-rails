@@ -9,10 +9,9 @@
 
   <% if product.quantity == 0 %>
     <div class="button-group">
-      <%= button_to add_item_cart_path(product_id: product.id), class: 'soldout' ,
-      method: :post do %>
+      <button class='soldout' disabled >
         Sold out
-      <% end %>
+      </button>
 
       <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
       method: :post, disabled: true do %>
