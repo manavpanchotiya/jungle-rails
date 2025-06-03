@@ -128,7 +128,5 @@ RSpec.describe User, type: :model do
       @user.valid?
       expect(@user).to be_valid
     end
-  
-  end
-  
+  end  
 end

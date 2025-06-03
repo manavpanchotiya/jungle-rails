@@ -9,10 +9,18 @@ class User < ApplicationRecord
 
   before_save :downcase_email
 
+  def authenticate_with_credentials(email, password)
+    user = User.find_by(email: email)
+    if user && user.authenticate(password)
+      user
+    else
+      nil
+    end
+  end
+
   private
 
   def downcase_email
     self.email = email.downcase
   end
-
 end
