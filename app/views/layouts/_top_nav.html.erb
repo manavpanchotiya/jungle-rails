@@ -67,13 +67,27 @@
         <li class="nav-item end-0">
           <%= link_to 'about', class: "nav-link " do %> About Us <% end %>
         </li>
-        <li class="nav-item end-0">
-          <%= link_to 'about', class: "nav-link " do %> Log In <% end %>
-        </li>
-      </ul>
+        
+        <% if current_user %>
+          <li class="nav-item end-0">
+            <%= link_to 'logout', class: "nav-link" do %> Log Out <% end %>
+          </li>
+        <% else %>
+          <li class="nav-item end-0">
+            <%= link_to 'signup', class: "nav-link" do %> Sign Up <% end %>
+          </li>
+
+          <li class="nav-item end-0">
+            <%= link_to 'login', class: "nav-link" do %> Log In <% end %>
+          </li>
+        <% end %>
+
+        
+        
     </div>
   </div>
 </nav>
+
 <script>
 (function(){
 const gnr = () => {
