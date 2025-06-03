@@ -128,5 +128,28 @@ RSpec.describe User, type: :model do
       @user.valid?
       expect(@user).to be_valid
     end
-  end  
+  end
+  
+  describe 'authenticate_with_credentials' do
+    before do
+      @user = User.create(
+        f_name: 'John',
+        l_name: 'Doe',
+        email: 'test@test.com',
+        password: 'easypasssword123',
+        password_confirmation: 'easypasssword123'
+      )
+    end
+      
+    it "authenticates user successfully with different cased email" do
+      authenticated_user = User.authenticate_with_credentials('TEST@TEST.com', 'easypasssword123')
+      expect(authenticated_user).to eq(@user)
+    end
+
+    it "authenticates user successfully with white spaced email" do
+      authenticated_user = User.authenticate_with_credentials('   test@test.com  ', 'easypasssword123')
+      expect(authenticated_user).to eq(@user)
+    end
+  end
+
 end
