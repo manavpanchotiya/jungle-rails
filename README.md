@@ -34,4 +34,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ## Screenshots
 ### Home Page
 !["Screenshot of Home Page"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/home_page.png)
+### Sold out plant
 !["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/sold_out_plant.png)
