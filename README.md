@@ -29,3 +29,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+
+## Screenshots
+!["Screenshot of Home Page"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/home_page.png)
