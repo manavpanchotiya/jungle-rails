@@ -38,3 +38,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 !["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/sold_out_plant.png)
 ### Empty Cart
 !["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/empty_cart.png)
+### Cart Checkout
+!["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/cart_checkout.png)
