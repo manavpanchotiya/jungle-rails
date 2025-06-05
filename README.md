@@ -37,6 +37,12 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ### Sold Out Plant
 !["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/sold_out_plant.png)
 ### Empty Cart
-!["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/empty_cart.png)
+!["Screenshot of Empty Cart"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/empty_cart.png)
 ### Cart Checkout
-!["Screenshot of Sold out plant"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/cart_checkout.png)
+!["Screenshot of Cart Checkout"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/cart_checkout.png)
+### Admin Dashboard
+!["Screenshot of Admin Dashboard"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/admin_dashboard.png)
+### Admin Products
+!["Screenshot of Admin Products"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/admin_all_products.png)
+### Admin Categories
+!["Screenshot of Admin Categories"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/admin_all_categories.png)
