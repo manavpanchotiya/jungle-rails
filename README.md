@@ -40,6 +40,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 !["Screenshot of Empty Cart"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/empty_cart.png)
 ### Cart Checkout
 !["Screenshot of Cart Checkout"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/cart_checkout.png)
+### Order Confirmation
+!["Screenshot of Order Confirmation"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/order_confirmation.png)
 ### Admin Dashboard
 !["Screenshot of Admin Dashboard"](https://github.com/manavpanchotiya/jungle-rails/blob/master/docs/admin_dashboard.png)
 ### Admin Products
